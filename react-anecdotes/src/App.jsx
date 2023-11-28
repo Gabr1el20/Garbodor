@@ -22,7 +22,7 @@ const App = ({anecdotes}) => {
       <button onClick={handleRandom}>Next anecdote</button>
       <button onClick={() => handleVotes(selected)}>Vote for this anecdote</button>
     </div>
-    <h2>Anecode with most votes</h2>
+    <h2>Anecdote with most votes</h2>
     <small>{anecdotes[votes.indexOf(Math.max(...votes))]}</small>
     </>
   )
