@@ -8,8 +8,8 @@ const App = ({anecdotes}) => {
   }
 
   return (
-    <div>
-      {anecdotes[selected]}
+    <div style={{display: 'flex', flexDirection: 'column'}}>
+      <p style={{textAlign: 'center'}}>{anecdotes[selected]}</p>
       <button onClick={handleRandom}>Next anecdote</button>
     </div>
   )
